@@ -11,3 +11,43 @@
     --white: #fff;
     --red: #f00;
 }
+
+header{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+}
+
+.user-info h3{
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.btn-login{
+    padding: 8px 16px;
+    border-radius: 12px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
