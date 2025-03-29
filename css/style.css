@@ -1,3 +1,4 @@
+/*Nessa atividade estamos usando um projeto que fizemos no figma de desktop e celular, e estamos deixando ele responsivo usando códigos novos e entendendo a lógica.*/
 *{
     margin: 0;
     padding: 0;
@@ -12,11 +13,17 @@
     --red: #f00;
 }
 
+.container{
+    min-width: 440px;
+    max-width: 1400px;
+}
+
 header{
     display: flex;
-    border: 1px solid red;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid var(--black);
+    padding: 20px 0;
 }
 
 .user{
@@ -50,4 +57,34 @@ header{
     font-weight: bold;
     border: none;
     cursor: pointer;
+}
+
+.menu{
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*Menu responsivo escondido por padrão (comportamento)*/
+.nav-menu{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.user-responsivo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width:576px) {
+    .user, .desktop-login{ /*Faz os elementos desaparecerem*/
+        display: none;
+    }
+    .menu{ /*Faz o botão de menu aparecer*/
+        display: block;
+    }
 }
