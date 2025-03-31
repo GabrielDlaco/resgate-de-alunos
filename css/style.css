@@ -88,12 +88,11 @@ header{
     .menu{ /*Faz o botão de menu aparecer*/
         display: block;
     }
-}
-
-main{
-    display: grid;   
-    grid-template-columns: 1fr;
-    align-items: center;
+    main{
+        display: grid;   
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
 }
 
 .img-box{
@@ -130,4 +129,42 @@ main{
 
 .like p{
     font-size: 1.2rem;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.footer-icons img{
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width:576px) {
+    main{
+        display: grid;   
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width:992px) {
+    main{
+        display: grid;   
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.btn-like{
+    cursor: pointer;
 }
