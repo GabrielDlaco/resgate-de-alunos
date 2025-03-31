@@ -16,6 +16,7 @@
 .container{
     min-width: 440px;
     max-width: 1400px;
+    margin: 0 auto;
 }
 
 header{
@@ -87,4 +88,46 @@ header{
     .menu{ /*Faz o botão de menu aparecer*/
         display: block;
     }
+}
+
+main{
+    display: grid;   
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.img-box{
+    width: 100%;
+    position: relative;
+}
+
+.foto{
+    width: 100%;
+    height: 250px;
+}
+
+.interacao{
+    background-color: rgba(0, 0, 0, 0.793);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.like img{
+    width: 25px;
+    height: 25px;
+}
+
+.like p{
+    font-size: 1.2rem;
 }
